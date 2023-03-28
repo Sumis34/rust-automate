@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+rustplus.config.json
+
 # testing
 /coverage
 

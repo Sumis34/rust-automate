@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/pages/flow.xts"  ],
   "exclude": ["node_modules"]
 }
