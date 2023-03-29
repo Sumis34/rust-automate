@@ -1,5 +1,5 @@
 // For more information about this file see https://dove.feathersjs.com/guides/cli/service.class.html#database-services
-import type { Params } from '@feathersjs/feathers'
+import type { Id, Params } from '@feathersjs/feathers'
 import { KnexService } from '@feathersjs/knex'
 import type { KnexAdapterParams, KnexAdapterOptions } from '@feathersjs/knex'
 
@@ -17,9 +17,10 @@ export class RustService<ServiceParams extends Params = RustParams> extends Knex
   RustParams,
   RustPatch
 > {
-  async find() {
-    // Just return all our messages
-    return 'hello'
+  async get(id: Id, params?: ServiceParams): Promise<Rust> {
+    console.log("okok");
+    
+    return super.get(id, params)
   }
 }
 
